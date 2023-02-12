@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel Agency</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--Bootstrap 5 link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css">
+
+    <!--css file link  -->
+    <link rel="stylesheet" href="./landingPage.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>our & <span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#about-us">about</a>
+        
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+        <i class="fas fa-moon" id="moon-btn"></i>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container starts-->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="" meathod="post" onsubmit="return canSubmit()">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" required>
+        <input type="password" class="box" placeholder="enter your password" name="txtPassword" required>
+        <input type="password" class="box" placeholder="re-enter password" name="txtConfirmPassword" required>
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!--login form container ends-->
+
+<!--home section starts-->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>adventure is <span class="auto-input"></span></h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href="#packages" class="btn">discover more</a>
+
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+
+        </div>
+    
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <!--home section ends-->
+
+    <!--Book Now section starts-->
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="book-row">
+            <div class="book-image">
+                <img src="./images/qrbook.jfif" alt=""/>
+
+            </div>
+
+            <div class="form">
+                <div class="inputBox">
+                    <h3>From</h3>
+                    <input id="fromPlace" type="text" placeholder="Enter your current location" value="">
+                </div>
+                <div class="inputBox">
+                    <h3>To</h3>
+                    <input id="toPlace" type="text" placeholder="Enter your destination" value="">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input id="guests" type="number" placeholder="Number of guests" value="">
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving</h3>
+                    <input id="leaving" type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Returning</h3>
+                    <input id="returning" type="date">
+                </div>
+                <input type="submit" onclick="book()" class="btn" value="submit">
+            </div>
+                
+        </div>
+
+    </section>
+
+    <!--Book Now section ends-->
+
+
+
+    <!--Best tour packages section starts-->
+
+    <section class="offers" id="offers">
+
+        <h1 class="heading"><span>Best Tour Packages Offers For You</span></h1>
+        <p class="para">Choose your next destination</p>
+    
+        <div class="cards-container">
+    
+            <div class="cards">
+                <img src="images/lotus_temple.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Lotus Temple - <span style="color: red;"><b>Delhi</b></span></h3>
+                    <p>The Lotus Temple is the only Bahai temple of worship in Asia. Bahaism is recognized as a combination of the nine great religions of the world.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.4999 <span>Rs.5999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <img src="images/sanpitersburg.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Sanpitersburg - <span style="color: rgb(252, 166, 6);"><b>Russia</b></span> </h3>
+                    <p>Petersburg is as famous for the Imperial palaces and parks in the suburbs as for the museums and palaces in the city centre. An exciting journey awaits.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.29999 <span>Rs.39999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <img src="images/Vietnam-new-tourist-attraction.png" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Da Nang - <span style="color: green;"><b>Vietnam</b></span> </h3>
+                    <p>With broad beaches, fantastic street food, the fabled Hai Van Pass, and a growing collection of cafes, restaurants, and bars. Say yes to the journey.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.19999 <span>Rs.24999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    </section>
+
+
+    <!--Best tour packages section ends-->
+
+    <!--Packages section starts-->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                    <p>Mumbai is a mix of iconic old-world charm architecture, strikingly modern high rises, cultural and traditional structures, and whatnot. Get ready to explore exciting tours there.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.5499 <span>Rs.7999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                    <p>Discover the beauty, culture and adventures waiting for you on the Hawaiian Islands. Take a tour of the Hawaiian Islands to see all of the thrills, beauty, culture, history and more. So What are you waiting for?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.64999 <span>Rs.99999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
+                    <p>A city of iconic attractions and brilliant beaches, Sydney is a destination you'll never forget. Sydney is home to must-visit icons like the Sydney Harbour Bridge and Opera House. Now sydney is all yours.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.89999 <span>Rs.94999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                    <p>The city lures with its magnificent art, architecture, culture, and cuisine, but there’s also a quieter magic waiting to be explored: the quaint cobbled lanes. Get ready to make Paris your own.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs79999 <span>Rs.89999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
+                    <p>The city lures with its magnificent art, architecture, culture, and cuisine, but there’s also a quieter magic waiting to be explored: the quaint cobbled lanes and much more. Get ready to make Paris your own.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.54999 <span>Rs.69999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> egypt </h3>
+                    <p>Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Book Egypt tour packages from india, visit wonders of the world in Giza & Cruise the Nile! </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.64999 <span>Rs.74999</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!--Packages section ends-->
+
+
+    <!--Services section starts-->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    
+        <div class="services-container">
+    
+            <div class="services-content">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Book Cheap hotels <span class="fas fa-hotel"></span> online at <b>Tour & Travel</b> & save up to <strong style="color: red;">80%</strong> on hotel booking. ?Free WiFi ?AC Room ?Free Breakfast ?Spa ?Free Cancellation.</p>
+            </div>
+            <div class="services-content">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Hotel food <span class="fas fa-bread-slice"></span> and beverage services <span class="fas fa-beer"></span> cover everything from room service to continental breakfast to in-house restaurants.</p>
+            </div>
+            <div class="services-content">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>Travellers will lean on tour operators to keep them safe and sound during their travel experience.</p>
+            </div>
+            <div class="services-content">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>We handle group tours, exclusive family holidays and also honey moons all over India and rest part of the World.</p>
+            </div>
+            <div class="services-content">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>providing the best services without much delay in your tour. Just fasten the belt and be ready to explore faster around the world.</p>
+            </div>
+            <div class="services-content">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>your adventure starts here. We are a full service travel agency which provides you thrilling and exciting adventures that will suits your personality.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!--Services section ends-->
+
+    <!--Gallery section starts-->
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="gallery-container">
+            <div class="gallery-box">
+                <img src="./images/g-1.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Santorini, Greece</h3>
+                    <p>Encircling a sea-filled caldera, spectacular Santorini scores top points for its dramatic beauty. Bleached white villas tumble down volcanic cliffs.</p>  
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-2.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Bali's intoxicating culture is a feast for the senses. Incense wafts from Hindu temples, rice paddies glow in electric greens, and the food jolts the taste buds.</p>
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-3.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>The Tomb of Ramesses IX (KV6) - Egypt</h3>
+                    <p>Three corridors comprise the first half of the tomb, every square cubit of their surfaces covered with beautiful ornamentation.</p>
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-4.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Indonesia</h3>
+                    <p>Canada's Great Bear Rainforest is the largest intact temperate rainforest in the world—and one of the most magical, with elusive species like sea wolves and Kermode bears roaming its 21 million acres.</p>
+                    
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-5.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>leaning tower of pisa, Italy</h3>
+                    <p>Thanks to a pretty impressive design flaw, the Leaning Tower of Pisa is one of Italy's most iconic sights.</p>
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-6.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Maldives</h3>
+                    <p>Icing-sugar sand, 3km of it, crystal-clear Caribbean water, off-shore coral reef with spectacular snorkelling or diving, a smattering of bars and open-air restaurants ... job done!</p>
+                    
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-7.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Maharashtra</h3>
+                    <p>Another beautiful place to go on a hot air balloon is Lonavla in Maharashtra where the ride will take you through some of the lush greenery hills of the region, which are worth every single penny spent.</p>
+                    
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-8.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Kullu - Manali</h3>
+                    <p>Explore the lush green meadows, orchards, and sparkling streams. Kullu is great for backpackers and trekkers. You can also enjoy other adventure sports like river rafting and paragliding. Book a hotel in Manali for your backpacking trip to Kullu.</p>
+                    
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./images/g-9.jpg" alt=""/>
+                <div class="gallery-content">
+                    <h3>Giza - Egypt</h3>
+                    <p>There is such beauty in the art of time travel, getting lost in the wonder, allowing it to take your breath away and….suddenly, you wake up and ...</p>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="https://www.makemytrip.com/promos/tks-31102022.html?intid" class="btn">Get More Trip</a>
+
+    </section>
+    <!--Gallery section ends-->
+
+    <!--Review section starts-->
+
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="./images/deep kalra.webp" alt=""/>
+                        <h3>Deep kalra</h3>
+                        <p>Tour & Travel always has your back if you face any issue. My flight was cancelled recently and ixigo helped me with a new flight in a jiffy and has not much traffic.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="./images/yatra-sabina-chopra.jpg" alt=""/>
+                        <h3>Sabina Chopra</h3>
+                        <p>The best part is Customer Service, Once you have raised a call back request you will get it in few seconds. This app takes care of customer satisfaction.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="./images/rajnish.jfif" alt=""/>
+                        <h3>Rajnish Kumar</h3>
+                        <p>This application is a wonderful app easy to book flight bus and train .i am using this app last 3 years and has never faced issue while surfing nd booking.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="./images/ashishkashyap.jpg" alt=""/>
+                        <h3>Ashish Kashyap</h3>
+                        <p>Best travel portal compare to others and i like there service I will recommend this app to my family. Good customer support with good communication skills.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="./images/stephen.jpg" alt=""/>
+                        <h3>Stephen Kaufer</h3>
+                        <p>Awesome experience while surfing the app, browsing is very easy, options are on tips and easy access, customer service of this app is too good and excellent.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Review section ends-->
+
+    <!--About section starts-->
+    <section class="about-us" id="about-us">
+        <h1 class="heading">
+            <span>a</span>
+            <span>b</span>
+            <span>o</span>
+            <span>u</span>
+            <span>t</span>            
+            <span class="space"></span>            
+            <span>u</span>
+            <span>s</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./images/destination-3.jpg" alt="">
+            </div>
+
+            <div class="about-us-content">
+                <h3><span>T</span>our & <span>T</span>ravel</h3>
+                <hr>
+                <p>If you are looking for a memorable adventure trip, <b>Tour & Travel</b> holiday packages are the right choice for you. Tour & Travel offers the widest range of customizable exciting tour to suit every kind of traveler from anywhere in <strong>India</strong> including <i><strong style="color: red;">Delhi, Mumbai, Chennai or Bangalore</strong></i>. Explore from over 150 tour packages to India with unbeatable deals and discounts. Explore the main scenery sightseeing points with the variety of experiential tours and activities included in Tour & Travel Tour Packages.
+                </p>
+                <br/>
+                <p>Be it a short trip or a long itinerary, a relaxing stay or an adventure holiday, whatever your travel preference, Tour & Travel has the right vacation tours for you to choose from. Looking to indulge? Don’t forget to check out our luxury Tour Packages offering the best of hotels and inclusions designed to pamper you on your wanderlust vacation. If you wish to know more about travel such as the best time to visit any destination, how to reach, things to do there and so on. We're the right say for you.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--About section ends-->
+
+    
+
+    <!--Brand section starts-->
+
+    <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper brand-box">
+                <div class="swiper-slide image"><img src="./images/airbnb.jfif" alt=""></div>
+                <div class="swiper-slide image"><img src="./images/travel-brands.jpg" alt=""></div>
+                <div class="swiper-slide image"><img src="./images/goibibo.png" alt=""></div>
+                <div class="swiper-slide image"><img src="./images/makemytrip.avif" alt=""></div>
+                <div class="swiper-slide image"><img src="./images/booking.webp" alt=""></div>
+                <div class="swiper-slide image"><img src="./images/yatra.webp" alt=""></div>
+                
+        </div>
+    </section>
+    <!--Brand section ends-->
+
+    <!--Footer section starts-->
+
+    <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./images/profile.jfif" alt=""/>
+            <h3 class="ceo">CEO</h3>
+            <p class="para">Ashish kumar</p>
+            <p><i class="fas fa-phone"></i> +91 8340664019</p>
+            <p><i class="fas fa-map-pin"></i> Bihar, India</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100018376488543">facebook</a>
+            <a href="https://www.instagram.com/ashish7947kumar?r=nametag">instagram</a>
+            <a href="https://twitter.com/AshishK717">twitter</a>
+            <a href="https://www.linkedin.com/in/ashish-kumar-5454031b8/">linkedin</a>
+        </div>
+
+        <div class="box">
+            <input id="emailText" type="email" placeholder="Enter your email" value="">
+            <button type="submit" class="btn" onclick="subscribe()">Subscribe Us</button>
+            <a href="#"><i class="fas fa-chevron-up"></i>Scroll to Top</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!--Footer section ends-->
+
+
+
+
+
+
+
+
+
+<!--Bootstrap js link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.min.js"></script>
+
+<!--Typed js-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!--js file link  -->
+<script src="./landingPage.js"></script>
+
+</body>
+</html>
